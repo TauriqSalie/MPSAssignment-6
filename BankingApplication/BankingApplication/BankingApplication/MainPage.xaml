@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BankingApplication.MainPage" BackgroundColor="White">
+
+    <StackLayout>
+       <Frame BackgroundColor="Red" Padding="24" CornerRadius="0">
+      
+    <Label Text="Standard Bank" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    </Frame>
+    <Button Text = "Deposit Money" Clicked ="Deposit_Button_Clicked"/>
+        <Entry x:Name="DepositMoneyEntry"/>
+        <Button Text = "Withdraw Money" Clicked ="Withdrawal_Button_Clicked"/>
+        <Entry x:Name="WithdrawMoneyEntry"/>
+        <Button Text = "Display Transactions"  Clicked ="Transactions_Button_Clicked"/>
+        <Label x:Name="DisplayTransactionsEntry" Padding="5,10,0,15"/>
+
+    </StackLayout>
+
+</ContentPage>
